@@ -6,6 +6,14 @@ A portfolio analytics and stress-testing demo for US equities, ETFs, commodity p
 
 The current build is intentionally compact: a FastAPI service, seeded adjusted-close demo data, an in-memory portfolio/report store, and a static browser UI. It is designed to show risk methodology clearly rather than pretend to be a trading or forecasting platform.
 
+## Quick Proof
+
+- Calculates core portfolio metrics: return, volatility, Sharpe, Sortino, beta, drawdown, VaR, expected shortfall, tracking error, information ratio, concentration, exposure, risk contribution, and correlations.
+- Includes historical stress windows for COVID, 2022 rates, 2018 Q4, March 2023 regional banking stress, and the 2023 AI-led rally.
+- Supports hypothetical shocks for single assets, equity proxies, rates, oil, commodities, and cash sleeves.
+- Persists a plain-English risk report generated from computed metrics; see [docs/reports/demo_portfolio_risk_report.md](docs/reports/demo_portfolio_risk_report.md).
+- Tests cover API behavior, validation, report persistence, calculation fixtures, and stress output.
+
 ## What It Demonstrates
 
 - Portfolio creation with ticker, weight, benchmark, and notional value inputs.
