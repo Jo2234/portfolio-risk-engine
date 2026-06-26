@@ -14,6 +14,8 @@ The current build is intentionally compact: a FastAPI service, seeded adjusted-c
 - Persists a plain-English risk report generated from computed metrics; see [docs/reports/demo_portfolio_risk_report.md](docs/reports/demo_portfolio_risk_report.md).
 - Tests cover API behavior, validation, report persistence, calculation fixtures, and stress output.
 
+See [docs/reports/risk_regime_snapshot.md](docs/reports/risk_regime_snapshot.md) for a one-page proof artifact with real local API outputs for the AI Barbell Portfolio.
+
 ## What It Demonstrates
 
 - Portfolio creation with ticker, weight, benchmark, and notional value inputs.
